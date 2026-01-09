@@ -41,7 +41,7 @@ const About = () => {
           <p className="text-gray-400 mb-4">(Meet Our Founder)</p>
 
           <p
-            className={`font-semibold text-gray-200 mb-8 leading-relaxed transition-all duration-[1000ms] ease-out ${
+            className={`font-light text-gray-200 mb-8 leading-relaxed transition-all duration-[1000ms] ease-out ${
               showText
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-[80px]"
@@ -52,7 +52,7 @@ const About = () => {
           </p>
 
           <p
-            className={`font-semibold text-gray-200 mb-8 leading-relaxed transition-all duration-[1000ms] ease-out delay-200 ${
+            className={`font-light text-gray-200 mb-8 leading-relaxed transition-all duration-[1000ms] ease-out delay-200 ${
               showText
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-[80px]"

@@ -1,6 +1,4 @@
-import React from "react";
-
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar.jsx";
 
 export default function WeddingGallerySlider() {
@@ -20,6 +18,12 @@ export default function WeddingGallerySlider() {
   const [current, setCurrent] = useState(0);
   const itemsPerView = 3;
 
+  // ✅ FORCE PAGE TO LOAD FROM TOP
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Auto slide
   useEffect(() => {
     const interval = setInterval(() => {
       next();
@@ -43,7 +47,7 @@ export default function WeddingGallerySlider() {
 
   return (
     <>
-      {/* Navbar */}
+      {/* NAVBAR */}
       <Navbar />
 
       {/* IMAGE SLIDER */}
@@ -66,12 +70,12 @@ export default function WeddingGallerySlider() {
             ))}
           </div>
 
-          {/* Controls */}
+          {/* CONTROLS */}
           <button
             onClick={prev}
             className="absolute left-2 top-1/2 -translate-y-1/2
-                       bg-black/60 text-white w-10 h-10 rounded-full
-                       flex items-center justify-center hover:bg-black"
+              bg-black/60 text-white w-10 h-10 rounded-full
+              flex items-center justify-center hover:bg-black"
           >
             ‹
           </button>
@@ -79,8 +83,8 @@ export default function WeddingGallerySlider() {
           <button
             onClick={next}
             className="absolute right-2 top-1/2 -translate-y-1/2
-                       bg-black/60 text-white w-10 h-10 rounded-full
-                       flex items-center justify-center hover:bg-black"
+              bg-black/60 text-white w-10 h-10 rounded-full
+              flex items-center justify-center hover:bg-black"
           >
             ›
           </button>
@@ -90,17 +94,19 @@ export default function WeddingGallerySlider() {
       {/* LOVE STORY */}
       <section className="bg-[#F6F4EF] px-6 py-24">
         <div className="max-w-4xl mx-auto">
-          {/* Header */}
+          {/* HEADER */}
           <div className="text-center mb-16">
             <p className="tracking-[0.3em] text-sm text-gray-500 mb-4">
               OUR LOVE STORY
             </p>
+
             <h1 className="font-serif text-4xl md:text-6xl text-[#D4AF37] mb-6">
               TOCUKWU & CHIAMAKA
               <span className="italic block text-2xl md:text-4xl">
                 #Tochi2025
               </span>
             </h1>
+
             <p className="italic text-gray-600">Written by Chiamaka.</p>
           </div>
 
@@ -109,32 +115,24 @@ export default function WeddingGallerySlider() {
             <p>
               On the 8th of November, 2022—a day already special as it marked
               the bride’s birthday—her elder brother shared her photos on his
-              WhatsApp status to celebrate her. Little did anyone know that this
-              simple gesture would set the stage for a beautiful love story.
+              WhatsApp status to celebrate her.
             </p>
 
             <p>
               The groom, who had attended the same university as the bride’s
               elder brother, came across the photos and was immediately
-              intrigued. Curious to know more, he reached out to her brother and
-              requested the bride’s contact details. Their first conversations
-              began shortly after, with occasional chats that came and went over
-              the following months.
+              intrigued.
             </p>
 
             <p>
-              Although life took them on separate paths for a while, fate had
-              other plans. In May 2024, they reconnected—and this time,
-              everything felt different. What started as casual conversations
-              quickly grew into something deeper, more intentional, and filled
-              with genuine affection.
+              In May 2024, they reconnected—and this time, everything felt
+              different.
             </p>
 
             <p>
-              From that moment on, their bond blossomed effortlessly, confirming
-              that timing truly is everything. What began with a birthday post
-              and a simple message has now become a love story worth celebrating
-              —one that led them to this beautiful union today.
+              What began with a birthday post and a simple message has now
+              become a love story worth celebrating—one that led them here
+              today.
             </p>
           </div>
         </div>
