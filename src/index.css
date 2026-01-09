@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@font-face {
+  font-family: "poppins"sans-serif;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+ 
+
+}
+
+  :root{
+    background-color: black;
+  }
+
