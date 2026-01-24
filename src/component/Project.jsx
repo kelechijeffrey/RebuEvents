@@ -75,7 +75,7 @@ const Project = () => {
             {/* CARD 3 */}
             <div className="relative h-[450px] rounded-2xl overflow-hidden shadow-2xl group">
               <img
-                src="/img/couple.png"
+                src="/img/file11.png"
                 alt="Forever Begins"
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -84,7 +84,7 @@ const Project = () => {
 
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <h3 className="text-xl font-semibold"> Home of Elegance</h3>
-                <p className="text-sm opacity-80">#Tochi2025</p>
+                <p className="text-sm opacity-80">#renaissanceluv2025</p>
 
                 <Link
                   to="/slider2"

@@ -3,16 +3,16 @@ import Navbar from "./Navbar.jsx";
 
 const Slider2 = () => {
   const images = [
-    "img/mg11.png",
-    "img/photo2.png",
-    "img/photo3.png",
-    "img/photo4.png",
-    "img/photo5.png",
-    "img/photo6.png",
-    "img/photo7.png",
-    "img/mg12.png",
-    "img/photo9.png",
-    "img/couple.png",
+    "img/file3.png",
+    "img/file1.png",
+    "img/file5.png",
+    "img/file4.png",
+    "img/file5.png",
+    "img/file6.png",
+    "img/file7.png",
+    "img/file12.png",
+    "img/file9.png",
+    "img/file.png",
   ];
 
   const [current, setCurrent] = useState(0);
@@ -97,7 +97,7 @@ const Slider2 = () => {
         {/* TEXT */}
         <div className="mt-24 text-center max-w-4xl mx-auto px-4">
           <p className="tracking-[0.4em] text-sm text-[#C9A24D] mb-4">
-            TOCHUKWU &  CHIAMAKA <span className="text-gray-300">#Tochi2025</span>
+            JULIET & VINCENT <span className="text-gray-300">#renaissanceluv2025</span>
           </p>
 
           <h2
